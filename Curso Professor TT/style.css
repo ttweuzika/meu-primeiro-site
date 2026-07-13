@@ -1,0 +1,203 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: #222;
+    width: 400px;
+    padding: 30px;
+    margin: 100px auto;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+    animation: aparecer 1s ease;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: gray;
+    color: white;
+    transform: scale(1.1);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+    border: 3px solid white;
+    transition: 0.4s;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+.descricao {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.habilidades {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #111;
+    border-radius: 10px;
+}
+
+.habilidades h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.habilidades p {
+    margin: 8px;
+    font-size: 16px;
+}
+.projetos {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #111;
+    border-radius: 10px;
+}
+
+.projetos h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.projetos p {
+    margin: 8px;
+    font-size: 16px;
+}
+.projetos {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #111;
+    border-radius: 10px;
+}
+
+.projetos h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.projetos p {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.projetos p:hover {
+    transform: scale(1.05);
+    background-color: #333;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+}
+.projeto-card {
+    background-color: #111;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.projeto-card:hover {
+    transform: scale(1.05);
+    background-color: #333;
+}
+nav {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: gray;
+}
+@media (max-width: 600px) {
+
+    .card {
+        width: 90%;
+        padding: 20px;
+        margin: 50px auto;
+    }
+
+    .card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    input {
+        width: 90%;
+    }
+
+}
